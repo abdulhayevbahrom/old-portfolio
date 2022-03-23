@@ -1,0 +1,50 @@
+.experience{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to bottom left, #7f0483, #35044b);
+    color: #fff;
+    padding-top: 40px;
+}
+
+.exp_caption{
+    text-align: center;
+}
+
+
+.exp_container{
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+
+.doks{
+    width: 240px;
+    height: 320px;
+    border: 1px solid #fff;
+    text-align: center;
+    position: relative;
+    background-color: yellow;
+}
+
+.item_caption{
+    background-color: red;
+}
+
+.exp_item_img{
+    width: 240px;
+    height: 287.54px;
+}
+
+.paper{
+    width: 240px;
+    height: 320px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
