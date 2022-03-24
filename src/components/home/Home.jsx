@@ -25,6 +25,8 @@ function Home() {
       },
     });
   }, []);
+
+  alert("Ekran kengligi 1199 px ga moslangan")
   return (
     <div className="homePage">
       <div className="home">
