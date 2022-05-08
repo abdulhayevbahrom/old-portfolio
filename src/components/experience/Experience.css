@@ -1,69 +1,88 @@
 .experience{
-    width: 100%;
-    height: auto;
+    width: calc( 100% - 280px );
     min-height: 100vh;
-    background-image:linear-gradient(to bottom left, #7f0483, #35044b);
-    color: #fff;
-    padding-top: 40px;
+    height: auto;
+    background-color: #2d2d2d;
+    position: relative;
+    overflow: auto;
 }
 
 .exp_caption{
-    margin-left: 10%;
-    text-decoration: underline;
-}
-
-
-.exp_container{
-    width: 80%;
-    height: auto;
-    min-height: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    margin-top: 30px;
-    padding-bottom: 40px;
-}
-
-.doks{
-    width: 550px;
-    height: 320px;
-    text-align: center;
-    position: relative;
-    background-color: yellow;
-    margin-top: 50px;
-    z-index: 20;
-}
-
-
-
-.doks img{
-    width: 100%;
-    height: 100%;
-}
-
-.doks_caption{
-    display: none;
-}
-
-.doks_caption a{
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-}
-
-.doks:hover .doks_caption{
-    display: block;
     position: absolute;
     top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    background-color: #000000bb;
+    left: 20px;
+    font-size: 80px;
+    color:#fff;
+    opacity: 0.2;
+}
+
+.exp_container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.exp_container::-webkit-scrollbar{
+    width: 10px;
+}
+
+.doks  .exp_container_item img{
+    width: 294px;
+    height: 180px;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: -62px -65px 60px -99px #fff;
+    transition: .3s;
+}
+
+.doks .exp_container_item img:hover{
+    transition: .3s;
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 
+.doks:nth-child(odd){
+    width: 330px;
+    height: auto;
+    padding-right: 5px;
+    border-bottom: 2px solid #fff;
+    border-right: 6px solid #fff;
+    transform: translateX(41%);
+    padding-right: 17px;
+    padding-bottom: 5px;
+}
 
+.doks:nth-child(even){
+    width: 330px;
+    height: auto;
+    padding-right: 5px;
+    border-bottom:2px solid #fff;
+    border-left: 6px solid #fff;
+    transform: translateX(139.3%);
+    padding-left: 17px;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+/* .doks:nth-child(even)::after{
+    width: 100px;
+    z-index:1;
+    content: '';
+    height: 100px;
+    background-color:#666666;
+    position: absolute;
+    top: -15px;
+    left: 0;
+} */
+
+.doks_link{
+    color: #ddd;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}

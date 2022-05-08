@@ -1,0 +1,99 @@
+.homeInfo{
+    width: calc( 100% - 280px);
+    height: 100vh;
+    background-color: #2d2d2d;
+    opacity: 0.1;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.opacity{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.05;
+    color: #fff;
+    font-size: 10vh;
+    letter-spacing:25px;
+}
+
+
+section{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sectionText{
+    color: #fff;
+}
+
+.sectionText h1{
+    margin-bottom: 10px;
+}
+
+.sectionText span{
+    color: #fb3b34;
+    font-style: italic;
+}
+
+.sectionText p{
+    width: 80%;
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.sectionImg{
+    width: 310px;
+    position: relative;
+}
+
+.sectionImg svg:first-child{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    color:#fff;
+    font: 100px sans-serif;
+    font-weight: 100;
+}
+
+.sectionImg svg:nth-child(2){
+    transform: rotate(45deg);
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    color:#fff;
+    font: 100px sans-serif;
+    font-weight: 100;
+}
+
+.sectionImg svg:nth-child(4){
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    color:#fff;
+    font: 100px sans-serif;
+    font-weight: 100;
+}
+
+.sectionImg svg:last-child{
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    color:#fff;
+    font: 100px sans-serif;
+    font-weight: 100;
+}
+.sectionImg img{
+    width: 250px;
+
+}

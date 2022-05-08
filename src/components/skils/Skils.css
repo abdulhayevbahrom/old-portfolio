@@ -1,223 +1,77 @@
 .skils{
-    width: 100%;
+    width: calc( 100% - 280px );
     height: 100vh;
+    background-color: #2d2d2d;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    background-image:linear-gradient(to bottom right, #7f0483, #22032f);
+}
+
+.skilsOpacity{
+    font-size: 100px;
+    opacity: 0.2;
+    color: #666;
+    position: absolute;
+    top: 0;
+    left: 30px;
 }
 
 .skils_container{
-    text-align: center;
-    background-color:#d84add;
-    width: 315px;
-    height: 266px;
-    clip-path: polygon(50% 100%, 0 0%, 100% 0%);
-    padding-top: 30px;
-    margin-top: 14px;
-    color:#fff;
-    position:absolute;
-    top: -145px;
-    left: 434px;
-    opacity: 0;
-    /* transform: rotateZ(-100deg); */
-}
-
-.html{
-    width: 300px;
-    height: 50px;
-    background-color: #FF5722;
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-    position: absolute;
-    top:159px;
-    left:-259px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.item img{
-    width: 50px;
-}
-
-.css{
-    width: 300px;
-    height: 50px;
-    background-color: #2196F3;
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-    position: absolute;
-    top:212px;
-    left:-191px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.css .item img{
-    height: 45px;
-}
-
-.scss{
-    width: 300px;
-    height: 50px;
-    background-color: #F2F2F2;
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-    position: absolute;
-    top:265px;
-    left:-222px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bootstrap{
-    width: 300px;
-    height: 50px;
-    background-color: #7809F7;
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-    position: absolute;
-    top:318px;
-    left:-253px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bootstrap .item{
-    width: 60%;
-}
-
-.github{
-    width: 300px;
-    height: 50px;
-    background-color: #fff;
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-    position: absolute;
-    top:371px;
-    left:-285px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.github .item img{
-    width: 40px;
-}
-
-.redux{
-    width: 300px;
-    height: 50px;
-    background-color:#fff;
-    clip-path: polygon(10% 0, 100% 0, 90% 99%, 0 100%);
-    position: absolute;
-    top:372px;
-    right:-285px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.firebase{
-    width: 300px;
-    height: 50px;
-    background-color: #00ffea;
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-    position: absolute;
-    top:318px;
-    right:-243px;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-.firebase .item{
-    width: 65%;
-}
-
-
-.react{
-    width: 300px;
-    height: 50px;
-    background-color:#000;
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-    position: absolute;
-    top:265px;
-    right:-221px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.react .item{
-    display: flex;
-    justify-content: space-between;
-    width: 65%;
-}
-
-.js{
-    width: 300px;
-    height: 50px;
-    background-color:#FFDF00;
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-    position: absolute;
-    top:212px;
-    right:-185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.js .item{
-    width: 70%;
-}
-
-.git{
-    width: 300px;
-    height: 50px;
-    background-color: #fff;
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-    position: absolute;
-    top:159px;
-    right:-238px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.html, 
-.css,
-.scss,
-.bootstrap,
-.js,
-.react,
-.redux,
-.git,
-.github,
-.firebase{
-    background-color:#9a04a0;
+    /* background-color: #3e3e3e; */
+    width: 45%;
+    height: 90%;
+    border: 6px solid #fb3b34da;
+    border-radius: 12px;
+    position: relative;
     color: #fff;
+    padding:30px 20px 0 20px;
+    transform: translateY(-100%);
 }
 
-.html:hover, 
-.css:hover,
-.scss:hover,
-.bootstrap:hover,
-.js:hover,
-.react:hover,
-.redux:hover,
-.git:hover,
-.github:hover,
-.firebase:hover{
-    cursor: pointer;
-    background-color:rgb(209, 74, 191);
-    transition: all 0.3s;
+.skils_top{
+    width: 60%;
+    height: 60px;
+    border: 6px solid #fb3b34da;
+    border-radius: 12px;
+    position: absolute;
+    top: -37px;
+    left: 20%;
+    background-color: #3e3e3e;
 }
 
+.skils_container h3{
+    color: #fff;
+    text-align: center;
+}
+
+.skils_container ul{
+    list-style-type:none;
+}
+
+.skils_container ul li {
+    text-transform: capitalize;
+    border-bottom: 2px dotted #fb3b34da;
+    margin-bottom: 4.5px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+.skils_container ul li svg{
+    font-size: 20px;
+}
+
+.skils_container ul li:hover{
+    /* transform: scale(1.04); */
+    transition: .2s;
+    border-color: #fff;
+    letter-spacing: 5px;
+}
+
+.skils_container ul li:hover svg{
+    color: #fb3b34da;
+}

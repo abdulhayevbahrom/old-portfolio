@@ -1,92 +1,63 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import './Contact.css'
 import { FaTelegram, FaPhoneAlt } from 'react-icons/fa'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import email from './at.png'
 import { gsap, ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
   useEffect(() => {
-    gsap.to(".li", {
-      left:0,
-      scrollTrigger: {
-      trigger: ".li",
-      start: "top 550px",
-      end: "top 500px",
-      // markers: true,
-      toggleActions: "restart none none reverse",
-      scrub: 5,
-    },
-  });
+    gsap.to((".contact_caption"), {
+      opacity: 1
+    });
 
-  gsap.to(".li2", {
-    left:0,
-    scrollTrigger: {
-    trigger: ".li2",
-    start: "top 550px",
-    end: "top 490px",
-    // markers: true,
-    toggleActions: "restart none none reverse",
-    scrub: 5,
-  },
-});
+    gsap.to((".contact"), {
+      x: 0
+    });
 
-gsap.to(".li3", {
-  left:0,
-  scrollTrigger: {
-  trigger: ".li3",
-  start: "top 550px",
-  end: "top 460px",
-  // markers: true,
-  toggleActions: "restart none none reverse",
-  scrub: 5,
-},
+  }, []);
 
-});
-gsap.to(".li4", {
-  left:0,
-  scrollTrigger: {
-  trigger: ".li4",
-  start: "top 550px",
-  end: "top 450px",
-  // markers: true,
-  toggleActions: "restart none none reverse",
-  scrub: 5,
-},
-});
+  const [username, setUsername] = useState('')
+  const [lastname, setLastname] = useState('')
+  const [textarea, setTextarea] = useState('')
+  console.log(textarea);
 
-gsap.to(".li5", {
-  left:0,
-  scrollTrigger: {
-  trigger: ".li5",
-  start: "top 550px",
-  end: "top 460px",
-  // markers: true,
-  toggleActions: "restart none none reverse",
-  scrub: 5,
-},
-});
-  },[])
+  const submitToEmail = () => {
+    if (username === '') {
+      alert('Fill in the fields provided!')
+    }
+  }
   return (
     <div className='contact'>
-      <div className="contact_box">
-        <h1>Contact</h1>
-        <ul>
-          <li className='li'><a  rel="noreferrer"
-                  target="_blank"
-                  href="https://t.me/Bahromjon0207"><FaTelegram /> @Bahromjon0207</a></li>
-          <li className='li2'><a  rel="noreferrer"
-                  target="_blank" 
-                  href="tel:+998 93-911-95-72"><FaPhoneAlt /> +998 93-911-95-72</a></li>
-          <li className='li3'><a  rel="noreferrer"
-                  target="_blank" 
-                  href="https://github.com/abdulhayevbahrom"><BsGithub /> github.com/abdulhayevbahrom</a></li>
-          <li className='li4'><img src={email} alt=''/> abdulhayevbahromjon2002@gmail.com</li>
-          <li className='li5'> <a rel="noreferrer" 
-                  target="_blank" 
-                  href="https://linkedin.com/in/bahromjon-abdulhayev-883726234/"><BsLinkedin /> linkedin.com/in/bahromjon-abdulhayev-883726234/</a></li>
-        </ul>
+      <h1 className='contact_caption'>Contact</h1>
+      <div className="contact_container">
+        <form>
+          <input value={username} onChange={e => setUsername(e.target.value)} type="text" placeholder='Username*' />
+          <input value={lastname} onChange={e => setLastname(e.target.value)} type="text" placeholder='Lastname*' />
+          <textarea value={textarea} onChange={e => setTextarea(e.target.value)} rows="5" placeholder='write text*...'></textarea>
+          <button onClick={submitToEmail} style={username === '' || lastname === '' || textarea === '' ? { cursor: "no-drop" } : { cursor: "pointer" }} className='submitBtn'>Submit</button>
+        </form>
+        <hr />
+        <div className="socialNetworks">
+          <div className="socialNetworks_caption">
+          <h3>Social Networks</h3>
+          </div>
+          <div className="networks">
+          <a href='tel:+998939119572' rel='noreferrer' className="tg">
+            <FaPhoneAlt />
+            <span>+998 93-911-95-72</span>
+          </a>
+          <a target="_blank" href='https://t.me/Bahromjon0207' rel='noreferrer' className="tg">
+            <FaTelegram />
+          </a>
+          <a href='https://github.com/abdulhayevbahrom' rel='noreferrer' target="_blank" className="tg">
+            <BsGithub />
+          </a>
+          <a href='https://www.linkedin.com/in/bahromjon-abdulhayev-883726234/' target="_blank" rel='noreferrer' className="tg">
+            <BsLinkedin />
+          </a>
+          </div>
+        </div>
       </div>
     </div>
   )
