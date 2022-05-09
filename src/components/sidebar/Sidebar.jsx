@@ -19,8 +19,8 @@ function Sidebar() {
         });
 
         gsap.to((".sidebarLogo"), {
-            width:"120px",
-            height:"120px"      
+            width:"150px",
+            height:"150px"
        });
       }, []);
   return (
@@ -29,7 +29,7 @@ function Sidebar() {
             <Link to="/"><img src={sidebar_logo} alt="" /></Link>
         </div> 
         <div className="sidebarLinks">
-            <NavLink to="/"  activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><IoHome/> Home</NavLink>
+            <NavLink to="/" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><IoHome/> Home</NavLink>
             <NavLink to="/about" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><FaUserTie/> About</NavLink>
             <NavLink to="/skils" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><GiSkills/> Skils</NavLink>
             <NavLink to="/experience" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><ImStatsBars/> Experience</NavLink>

@@ -15,7 +15,7 @@ function About() {
   const date = new Date()
   return (
     <div className='about'>
-      <h1 className='h1_1'>About Me</h1>
+      <h1 className='h1_1'>About me</h1>
       <div className="about_me">
         <h1>I'm a<span> Front-end Developer</span>.</h1>
         <p>Hello, my name is Bahromjon, surname is Abdulhayev. I'am from Uzbekistan. I was born in 2002 in Namangan region. At the age of seven, I was admitted to the 1st grade of the secondary school No. 38 in our district.
@@ -33,7 +33,7 @@ function About() {
         </ul>
         <ul>
           <li><b>Age :</b>{date.getFullYear() - 2002}</li>
-          <li><b>Email :</b><a target="blank" href="https://mail.google.com/mail/u/0/#inbox">abdulhayevbahromjon2002@gmail.com</a></li>
+          <li><b>Email :</b>abdulhayevbahromjon2002@gmail.com</li>
           <li><b>Phone :</b>+998 93-911-95-72</li>
         </ul>
       </div>

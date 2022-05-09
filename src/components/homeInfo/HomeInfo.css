@@ -1,5 +1,5 @@
 .homeInfo{
-    width: calc( 100% - 280px);
+    width: calc( 100% - 27%);
     height: 100vh;
     background-color: #2d2d2d;
     opacity: 0.1;
@@ -35,6 +35,7 @@ section{
 
 .sectionText h1{
     margin-bottom: 10px;
+    font-size: 45px;
 }
 
 .sectionText span{
@@ -45,12 +46,12 @@ section{
 .sectionText p{
     width: 80%;
     margin-top: 20px;
-    font-size: 19px;
-    line-height: 28px;
+    font-size: 25px;
+    line-height: 34px;
 }
 
 .sectionImg{
-    width: 310px;
+    width: 400px;
     position: relative;
 }
 
@@ -94,6 +95,89 @@ section{
     font-weight: 100;
 }
 .sectionImg img{
-    width: 250px;
+    width: 300px;
+}
 
+@media screen and (max-width:1700px) {
+    .sectionImg img{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    .sectionText h1{
+        font-size: 40px;
+    }
+
+    .sectionText p{
+        font-size: 23px;
+    }
+    
+    .sectionImg img{
+        width: 260px;
+    }
+    
+    section{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1413px) {
+    .sectionText h1{
+        font-size: 35px;
+    }
+
+    .sectionText p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:1297px){
+    .sectionImg img{
+        width: 240px;
+    }
+} 
+
+@media screen and (max-width:1260px){
+    .sectionImg img{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:1230px){
+    .sectionText h1{
+        font-size: 30px;
+    }
+
+    .sectionText p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:1130px){
+    section{
+        width: 80%;
+        flex-direction: column;
+        height: 70vh;
+        align-items: center;
+    }
+
+    .sectionImg img{
+        width: 310px;
+    }
+
+    .sectionImg{
+        width: auto;
+    }
+
+    .sectionText h1{
+        font-size: 40px;
+    }
+
+    .sectionText p{
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
