@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './HomeInfo.css'
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useEffect } from 'react'
 import sectionImg from './sectionImg.jpg'
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi'
+import Sidebar from '../sidebar/Sidebar';
+import {FaBars} from 'react-icons/fa'  
+
+import {FiX} from 'react-icons/fi'
+
 gsap.registerPlugin(ScrollTrigger);
 
 function HomeInfo() {
@@ -12,10 +17,11 @@ function HomeInfo() {
             opacity: 1
         });
     }, []);
-    return (
+    const [bar, setBar] = useState(false)
+  return (
         <div className='homeInfo'>
             <h1 className='opacity'>WELCOME!</h1>
-            <section>
+                <section>
                 <div className="sectionText">
                     <h1>Hello, my name is <span>Bahromjon</span>.</h1>
                     <h1>I'm a<span> Front-end Developer</span>.</h1>
@@ -24,7 +30,7 @@ function HomeInfo() {
                 <div className="sectionImg">
                     <BiChevronUp />
                     <BiChevronUp />
-                    <img src={sectionImg} alt="My_Photo" title='my photo' />
+                    <img className='homeInfoimg' src={sectionImg} alt="My_Photo" title='my photo' />
                     <BiChevronDown />
                     <BiChevronDown />
                 </div>

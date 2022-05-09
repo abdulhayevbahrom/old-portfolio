@@ -16,8 +16,13 @@
     opacity: 0.2;
 }
 
+.doks{
+    width: 330px;
+}
+
 .exp_container{
-    width: 100%;
+    margin: 0 auto;
+    width: 800px;
     height: 100vh;
     padding-top: 140px;
     padding-bottom: 100px;
@@ -25,10 +30,10 @@
 }
 
 .exp_container::-webkit-scrollbar{
-    width: 10px;
+    width: 0;
 }
 
-.doks  .exp_container_item img{
+.doks .exp_container_item img{
     width: 294px;
     height: 180px;
     display: block;
@@ -36,6 +41,7 @@
     box-shadow: -62px -65px 60px -99px #fff;
     transition: .3s;
 }
+
 
 .doks .exp_container_item img:hover{
     transition: .3s;
@@ -85,4 +91,21 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
+}
+
+@media screen and (max-width:1380px) {
+
+    .exp_container{
+        margin-right: 16%;
+        padding: 0;
+        margin: 100px 0;
+    }
+    
+}
+
+@media screen and (max-width:1250px){
+    .exp_container{
+        margin-right: 20%;
+        padding-bottom: 170px;
+    }
 }

@@ -16,9 +16,12 @@ html::-webkit-scrollbar{
 }
 
 .app{
+  width: 100%;
   display: flex;
   background-color:#4b4a4a;
   position: relative;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .clock{
@@ -64,4 +67,11 @@ html::-webkit-scrollbar{
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+
+@media screen and (max-width:960px){
+    .sidebar_app{
+        display: none;
+    } 
 }

@@ -1,5 +1,5 @@
 .skils{
-    width: calc( 100% - 280px );
+    width: calc( 100% - 27% );
     height: 100vh;
     background-color: #2d2d2d;
     position: relative;
@@ -20,9 +20,9 @@
 }
 
 .skils_container{
-    /* background-color: #3e3e3e; */
-    width: 45%;
+    width: 48%;
     height: 90%;
+    background-color: #1a1a1a;
     border: 6px solid #fb3b34da;
     border-radius: 12px;
     position: relative;
@@ -45,24 +45,22 @@
 .skils_container h3{
     color: #fff;
     text-align: center;
-}
-
-.skils_container ul{
-    list-style-type:none;
+    font-size: 37px;
 }
 
 .skils_container ul li {
-    text-transform: capitalize;
+    list-style-type:none;
     border-bottom: 2px dotted #fb3b34da;
     margin-bottom: 4.5px;
     font-style: italic;
     display: flex;
     justify-content: space-between;
     transition: .2s;
+    font-size: 27px;
 }
 
 .skils_container ul li svg{
-    font-size: 20px;
+    font-size: 27px;
 }
 
 .skils_container ul li:hover{
@@ -75,3 +73,58 @@
 .skils_container ul li:hover svg{
     color: #fb3b34da;
 }
+
+@media screen and (max-width : 1750px) {
+    .skils_container{
+        width: 55%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width : 1416px) {
+    .skils_container{
+        width: 60%;
+        height: 75%;
+    }
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width : 1250px){
+    .skils_container{
+        width: 46%;
+        height: 90%;
+    }
+
+
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 15.5px;
+    }
+
+    .skils_container h3{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width : 1175px){
+    .skils_container{
+        width: 40%;
+    }
+   
+}
+
+@media screen and (max-width : 1000px){
+    .skils_container{
+        width: 70%;
+        /* height: %; */
+    }
+}
+

@@ -17,23 +17,19 @@ function Sidebar() {
         gsap.to((".sidebar"), {
              x: "0px",
         });
-
-        gsap.to((".sidebarLogo"), {
-            width:"150px",
-            height:"150px"
-       });
       }, []);
+
   return (
     <div className='sidebar'>
         <div className="sidebarLogo">
             <Link to="/"><img src={sidebar_logo} alt="" /></Link>
         </div> 
         <div className="sidebarLinks">
-            <NavLink to="/" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><IoHome/> Home</NavLink>
-            <NavLink to="/about" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><FaUserTie/> About</NavLink>
-            <NavLink to="/skils" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><GiSkills/> Skils</NavLink>
-            <NavLink to="/experience" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><ImStatsBars/> Experience</NavLink>
-            <NavLink to="/contact" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><TiMessages/> Contact</NavLink>
+            <NavLink exact to="/" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><IoHome/> <span>Home</span></NavLink>
+            <NavLink to="/about" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><FaUserTie/> <span>About</span> </NavLink>
+            <NavLink to="/skils" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><GiSkills/> <span>Skils</span> </NavLink>
+            <NavLink to="/experience" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><ImStatsBars/> <span>Experience</span> </NavLink>
+            <NavLink to="/contact" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><TiMessages/> <span>Contact</span> </NavLink>
         </div>
     </div>
   )

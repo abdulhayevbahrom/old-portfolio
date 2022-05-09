@@ -1,5 +1,5 @@
 .homeInfo{
-    width: calc( 100% - 27%);
+    width: calc( 100% - 500px);
     height: 100vh;
     background-color: #2d2d2d;
     opacity: 0.1;
@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+    user-select: none;
 }
 
 .opacity{
@@ -19,6 +20,7 @@
     color: #fff;
     font-size: 10vh;
     letter-spacing:25px;
+    user-select: none;
 }
 
 
@@ -53,6 +55,10 @@ section{
 .sectionImg{
     width: 400px;
     position: relative;
+}
+
+.sectionImg img{
+    width: 300px;
 }
 
 .sectionImg svg:first-child{
@@ -94,8 +100,13 @@ section{
     font: 100px sans-serif;
     font-weight: 100;
 }
-.sectionImg img{
-    width: 300px;
+
+
+
+@media screen and (max-width:1705px) {
+    .homeInfo{
+        width: calc( 100% - 430px);
+    }
 }
 
 @media screen and (max-width:1700px) {
@@ -103,6 +114,7 @@ section{
         width: 270px;
     }
 }
+
 
 @media screen and (max-width:1650px) {
     .sectionText h1{
@@ -122,6 +134,12 @@ section{
     }
 }
 
+@media screen and (max-width :1444px) {
+    .homeInfo{
+        width: calc( 100% - 400px);
+    }
+}
+
 @media screen and (max-width:1413px) {
     .sectionText h1{
         font-size: 35px;
@@ -130,6 +148,18 @@ section{
     .sectionText p{
         font-size: 20px;
         line-height: 28px;
+    }
+}
+
+@media screen and (max-width:1413px) {
+    .homeInfo{
+        width: calc( 100% - 380px);
+    }
+}
+
+@media screen and (max-width :1333px) {
+    .homeInfo{
+        width: calc( 100% - 350px);
     }
 }
 
@@ -142,6 +172,12 @@ section{
 @media screen and (max-width:1260px){
     .sectionImg img{
         width: 230px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .homeInfo{
+        width: calc( 100% - 300px);
     }
 }
 
@@ -181,3 +217,106 @@ section{
         line-height: 35px;
     }
 }
+
+@media screen and (max-width:966px){
+    .homeInfo{
+        width: 100%;
+    }
+
+    .sectionText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sectionText p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:775px){
+    .opacity{
+        font-size: 7vh;
+    }
+}
+
+@media screen and (max-width:703px){
+    .sectionText h1{
+        font-size: 35px;
+    }
+
+    .sectionText p{
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:615px){
+    .sectionText h1{
+        font-size: 30px;
+    }
+
+    .opacity{
+        font-size: 5vh;
+    }
+
+    .sectionText p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:528px){
+    .sectionText h1{
+        font-size: 25px;
+    }
+
+    .opacity{
+        font-size: 3vh;
+    }
+
+    .sectionText p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .sectionImg img{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .sectionText h1{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .sectionText h1{
+        font-size: 20px;
+    }
+
+    .sectionText p{
+        font-size: 16px;
+        line-height: 25px;
+        width: 95%;
+    }
+}
+
+/* @media screen and (max-width:960px){
+    .sidebar_home{
+        width: auto;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+}
+.side{
+    width: 200px;
+    z-index: 50;
+
+} */
