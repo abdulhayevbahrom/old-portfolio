@@ -7,17 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Skils() {
     useEffect(() => {
-        gsap.to((".skils_container"), {
-            //  opacity:1,
-             y:0
+        gsap.to((".skils"), {
+             x:0
         });
       }, []);
+
   return (
     <div className='skils'>
-        <h1 className='skilsOpacity'>SKILS</h1>
+        <h1 className='skilsOpacity'>SKILLS</h1>
         <div className="skils_container" >
             <div className="skils_top"></div>
-            <h3>My Skils</h3>
+            <h3>My Skills</h3>
             <ul>
                 <li>HTML   <FiCheck/> </li>
                 <li>CSS  <FiCheck/> </li>

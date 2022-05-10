@@ -1,5 +1,5 @@
 .skils{
-    width: calc( 100% - 27% );
+    width: calc( 100% - 500px );
     height: 100vh;
     background-color: #2d2d2d;
     position: relative;
@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(100%);
 }
 
 .skilsOpacity{
@@ -28,7 +29,6 @@
     position: relative;
     color: #fff;
     padding:30px 20px 0 20px;
-    transform: translateY(-100%);
 }
 
 .skils_top{
@@ -81,6 +81,18 @@
     }
 }
 
+@media screen and (max-width : 1705px){
+    .skils{
+        width: calc( 100% - 430px);
+    }
+}
+
+@media screen and (max-width: 1444px){
+    .skils{
+        width: calc( 100% - 400px);
+    }
+}
+
 @media screen and (max-width : 1416px) {
     .skils_container{
         width: 60%;
@@ -94,17 +106,62 @@
 }
 
 
+@media screen and (max-width: 1343px) {
+    .skils{
+        width: calc( 100% - 380px);
+    }
+}
+
+@media screen and (max-width: 1333px) {
+    .skils{
+        width: calc( 100% - 350px);
+    }
+}
+
+
 @media screen and (max-width : 1250px){
     .skils_container{
-        width: 46%;
-        height: 90%;
+        width: 65%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    
+    
+    
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 21px;
+    }
+    
+    .skils_container h3{
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .skils{
+        width: calc( 100% - 280px);
     }
 
-
+    .skils_container{
+        width: 45%;
+        height: auto;
+        padding-bottom: 15px;
+    }
 
     .skils_container ul li,
     .skils_container ul li svg{
-        font-size: 15.5px;
+        font-size: 15px;
+    }
+    
+    .skils_container h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .skils_container{
+        width: 50%;
     }
 
     .skils_container h3{
@@ -112,19 +169,158 @@
     }
 }
 
-
-
-@media screen and (max-width : 1175px){
-    .skils_container{
-        width: 40%;
+@media screen and (max-width: 960px){
+    .skils{
+        width: 100%;
     }
-   
+
+    .skils_container{
+        width: 46%;
+    }
 }
 
-@media screen and (max-width : 1000px){
+
+@media screen and (max-width: 821px){
     .skils_container{
         width: 70%;
-        /* height: %; */
+    }
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 25px;
     }
 }
+
+@media screen and (max-width: 769px){
+    .skils_container{
+        width: 60%;
+    }
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    .skils_container{
+        width: 60%;
+    }
+
+    .skils_top{
+        width: 60%;
+        height: 50px;
+        top: -30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 617px){
+    .skils_container{
+        width: 62%;
+    }
+
+    .skils_container,
+    .skils_top{
+        border: 3px solid #fb3b34da;
+    }
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 13px;
+    }
+
+    .skils_top{
+        width: 60%;
+        height: 40px;
+        top: -25px;
+    }
+
+    .skils_container h3{
+        font-size: 19px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 11px;
+    }
+
+    .skils{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 10px;
+    }
+
+    .skils_container h3{
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .skils_container{
+        width: 70%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .skils_top{
+        width: 60%;
+        height: 35px;
+        top: -20px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .skils_container{
+        width: 70%;
+    }
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    .skils_container{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    .skils_container{
+        width: 80%;
+    }
+
+    .skils{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .skilsOpacity{
+        font-size: 70px;
+    }
+
+    
+    .skils_container{
+        width: 70%;
+    }
+
+    .skils_container ul li,
+    .skils_container ul li svg{
+        font-size: 10px;
+    }
+}
+    
 
