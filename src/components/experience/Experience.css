@@ -1,77 +1,76 @@
-.experience{
-    width: calc( 100% - 280px );
-    min-height: 100vh;
-    height: auto;
-    background-color: #2d2d2d;
-    position: relative;
-    overflow: auto;
+.experience {
+  width: calc(100% - 500px);
+  min-height: 100vh;
+  height: auto;
+  background-color: #2d2d2d;
+  position: relative;
+  overflow: auto;
+  transform: translateX(100%);
 }
 
-.exp_caption{
-    position: absolute;
-    top: 0;
-    left: 20px;
-    font-size: 80px;
-    color:#fff;
-    opacity: 0.2;
+.exp_caption {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 80px;
+  color: #fff;
+  opacity: 0.2;
 }
 
-.doks{
-    width: 330px;
+.doks {
+  width: 330px;
 }
 
-.exp_container{
-    margin: 0 auto;
-    width: 800px;
-    height: 100vh;
-    padding-top: 140px;
-    padding-bottom: 100px;
-    overflow: auto;
+.exp_container {
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  overflow: auto;
 }
 
-.exp_container::-webkit-scrollbar{
-    width: 0;
+.exp_container::-webkit-scrollbar {
+  width: 0;
 }
 
-.doks .exp_container_item img{
-    width: 294px;
-    height: 180px;
-    display: block;
-    margin-bottom: 10px;
-    box-shadow: -62px -65px 60px -99px #fff;
-    transition: .3s;
+.doks .exp_container_item img {
+  width: 294px;
+  height: 180px;
+  display: block;
+  margin-bottom: 10px;
+  box-shadow: -62px -65px 60px -99px #fff;
+  transition: 0.3s;
 }
 
-
-.doks .exp_container_item img:hover{
-    transition: .3s;
-    transform: scale(1.5);
-    cursor: pointer;
+.doks .exp_container_item img:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-
-.doks:nth-child(odd){
-    width: 330px;
-    height: auto;
-    padding-right: 5px;
-    border-bottom: 2px solid #fff;
-    border-right: 6px solid #fff;
-    transform: translateX(41%);
-    padding-right: 17px;
-    padding-bottom: 5px;
+.doks:nth-child(odd) {
+  width: 330px;
+  height: auto;
+  padding-right: 5px;
+  border-bottom: 2px solid #fff;
+  border-right: 6px solid #fff;
+  transform: translateX(41%);
+  padding-right: 17px;
+  padding-bottom: 5px;
 }
 
-.doks:nth-child(even){
-    width: 330px;
-    height: auto;
-    padding-right: 5px;
-    border-bottom:2px solid #fff;
-    border-left: 6px solid #fff;
-    transform: translateX(139.3%);
-    padding-left: 17px;
-    padding-bottom: 5px;
-    position: relative;
-    z-index: 2;
+.doks:nth-child(even) {
+  width: 330px;
+  height: auto;
+  padding-right: 5px;
+  border-bottom: 2px solid #fff;
+  border-left: 6px solid #fff;
+  transform: translateX(139.3%);
+  padding-left: 17px;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 /* .doks:nth-child(even)::after{
@@ -85,27 +84,167 @@
     left: 0;
 } */
 
-.doks_link{
-    color: #ddd;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
+.doks_link {
+  color: #ddd;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-@media screen and (max-width:1380px) {
-
-    .exp_container{
-        margin-right: 16%;
-        padding: 0;
-        margin: 100px 0;
-    }
-    
+@media screen and (max-width: 1705px) {
+  .experience {
+    width: calc(100% - 430px);
+  }
 }
 
-@media screen and (max-width:1250px){
-    .exp_container{
-        margin-right: 20%;
-        padding-bottom: 170px;
-    }
+@media screen and (max-width: 1444px) {
+  .experience {
+    width: calc(100% - 400px);
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .doks:nth-child(odd) {
+    transform: translateX(26%);
+  }
+
+  .doks:nth-child(even) {
+    transform: translateX(124.3%);
+  }
+}
+
+@media screen and (max-width: 1343px) {
+  .experience {
+    width: calc(100% - 380px);
+  }
+}
+
+@media screen and (max-width: 1333px) {
+  .experience {
+    width: calc(100% - 350px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .experience {
+    width: calc(100% - 280px);
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .experience {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .exp_container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .doks:nth-child(odd) {
+    transform: translateX(20%);
+  }
+
+  .doks:nth-child(even) {
+    transform: translateX(118.3%);
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .doks:nth-child(odd) {
+    margin-bottom: 250px;
+    transform: translateX(0);
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-left: 15px;
+  }
+
+  .doks:nth-child(even) {
+    margin-top: 250px;
+    transform: translateX(0);
+    padding-right: 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-right: 15px;
+  }
+
+  .exp_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .experience {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .doks:nth-child(odd) {
+    /* background-color: blue; */
+    margin: 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #fff;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .doks:nth-child(even) {
+    margin-top: 250px;
+    /* background-color: yellow; */
+    margin: 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #fff;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .exp_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .doks:nth-child(odd) {
+    width: 80%;
+  }
+
+  .doks:nth-child(even) {
+    width: 80%;
+  }
+
+  .exp_caption{
+      font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 345px){
+    .doks .exp_container_item img {
+        width: 264px;
+        height: 150px;
+      }
+}
+
+@media screen and (max-width: 313px){
+    .doks .exp_container_item img {
+        width: 244px;
+        height: 130px;
+      }
 }

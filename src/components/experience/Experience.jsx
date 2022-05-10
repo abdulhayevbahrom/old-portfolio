@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Experience.css";
 import doks1 from "./doks1.jpg";
 import nam from "./nam.jpg";
@@ -7,8 +7,17 @@ import walmart from './walmart.jpg'
 import find from './find.jpg'
 import QR from './QR.jpg'
 import momentum from './momentum.jpg'
+import { gsap, ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
+
 
 function Experience() {
+  useEffect(() => {
+    gsap.to((".experience"), {
+      opacity: 1,
+      x: 0
+    });
+  }, []);
   return (
     <div className="experience">
       <h1 className="exp_caption">Experience</h1>
