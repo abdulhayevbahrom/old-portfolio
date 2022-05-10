@@ -1,300 +1,333 @@
-.about{
-    width: calc( 100% - 27% );
-    height: 100vh;
-    background-color: #2d2d2d;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 60px;
-    opacity: 0.1;
-    transform: translateX(100%);
-    cursor: pointer;
+.about {
+  width: calc(100% - 500px);
+  height: 100vh;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 60px;
+  opacity: 0.1;
+  transform: translateX(100%);
+  cursor: pointer;
 }
 
-.h1_1{
-    font-size: 60px;
-    color: #FFFFFF;
-    text-shadow: 0 0 20px #FFFFFF;
-    margin-bottom: 20px;
-    user-select: none;
+.h1_1 {
+  font-size: 60px;
+  color: #ffffff;
+  text-shadow: 0 0 20px #ffffff;
+  margin-bottom: 20px;
+  user-select: none;
 }
 
-.about_me h1{
-    color: #fff;
-    font-size: 45px;
+.about_me h1 {
+  color: #fff;
+  font-size: 45px;
 }
 
-.about_me h1 span{
-    color: #fb3b34;
+.about_me h1 span {
+  color: #fb3b34;
 }
 
-.about_me p{
-    color: #fff;
-    margin-top: 10px;
-    text-indent: 30px;
-    width: 85%;
-    font-size: 30px;
+.about_me p {
+  color: #fff;
+  margin-top: 10px;
+  text-indent: 30px;
+  width: 85%;
+  font-size: 30px;
 }
 
-
-.about_birth{
-    display: flex;
-    color: #fff;
-    margin-top: 30px;
-    width: 80%;
-    justify-content: space-between;
+.about_birth {
+  display: flex;
+  color: #fff;
+  margin-top: 30px;
+  width: 80%;
+  justify-content: space-between;
 }
 
-.about_birth ul li{
-    margin-bottom: 10px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 5px;
-    color: #ddd;
-    list-style-type: none;
-    transition: .2s;
-    font-size: 25px;
+.about_birth ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+  color: #ddd;
+  list-style-type: none;
+  transition: 0.2s;
+  font-size: 25px;
 }
 
-.about_birth ul li:hover{
-    transform: scale(1.04);
-    cursor: pointer;
-    transition: .2s;
+.about_birth ul li:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.about_birth ul li a{
-    color: #ddd;
-    text-decoration: none;
+.about_birth ul li b {
+  margin-right: 10px;
+  color: #fff;
 }
 
-.about_birth ul li b{
-    margin-right: 10px;
-    color: #fff;
+.about_resume {
+  display: flex;
+  margin-top: 50px;
 }
 
-.about_resume{
-    display: flex;
-    margin-top: 50px;
-}
-
-.about_resume a:first-child{
-    margin-left: 0;
-    margin-right:30px;
+.about_resume a:first-child {
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .about_resume a {
+  font-size: 27px;
+  padding: 10px 20px;
+  padding-bottom: 14px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #fb3b34;
+  transition: 0.2s ease-in-out;
+}
+
+.about_resume a:hover {
+  background-color: #fb3b34;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1705px) {
+  .about {
+    width: calc(100% - 430px);
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .about_me p {
     font-size: 27px;
-    padding:10px 20px;
-    padding-bottom: 14px;
-    color: #fff;
-    background-color: transparent;
-    border-radius: 50px;
-    text-decoration: none;
-    border: 2px solid #fb3b34;
-    transition: .2s ease-in-out;
+  }
+
+  .about_birth {
+    width: 90%;
+  }
 }
 
-.about_resume a:hover{
-    background-color: #fb3b34;
-    transition: .2s ease-in-out;
+@media screen and (max-width: 1600px) {
+  .about_resume a {
+    font-size: 24px;
+  }
 }
 
+@media screen and (max-width: 1560px) {
+  .about_me p {
+    font-size: 23px;
+    width: 90%;
+  }
 
-@media screen and (max-width:1750px) {
-    .about_me p{
-        font-size: 27px;
-    }
-
-    .about_birth{
-        width: 90%;
-    }
+  .about_birth ul li {
+    font-size: 22px;
+  }
 }
 
-@media screen and (max-width:1600px) {
-    .about_resume a {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width:1560px){
-    .about_me p{
-        font-size: 23px;
-        width: 90%;
-    }
-
-    .about_birth ul li{
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width:1400px){
+@media screen and (max-width: 1444px){
     .about{
-        padding-left: 40px;
+        width: calc( 100% - 400px);
+    }
+} 
+
+@media screen and (max-width: 1400px) {
+  .about {
+    padding-left: 40px;
+  }
+
+  .about_resume a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .h1_1 {
+    font-size: 54px;
+  }
+
+  .about_me h1 {
+    font-size: 42px;
+  }
+
+  .about_birth ul li {
+    font-size: 20px;
+  }
+
+  .about_resume a {
+    font-size: 18px;
+    padding: 8px 18px;
+  }
+}
+
+@media screen and (max-width: 1343px){
+    .about{
+        width: calc( 100% - 380px);
+    }
+}
+
+@media screen and (max-width: 1333px){
+    .about{
+        width: calc( 100% - 350px);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .about{
+        width: calc( 100% - 280px);
+    }
+}
+
+@media screen and (max-width: 1230px) {
+  .h1_1 {
+    font-size: 40px;
+  }
+
+  .about_me h1 {
+    font-size: 37px;
+  }
+
+  .about_birth ul li {
+    font-size: 15px;
+  }
+
+  .about_me p {
+    font-size: 17px;
+  }
+
+  .about_resume a {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  .about_resume {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about_me p {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .about_birth ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 960px){
+    .about{
+        width: 100%;
     }
 
     .about_resume a {
-        font-size: 20px;
+      padding-bottom: 8px;  
     }
 }
 
-@media screen and (max-width:1350px){
-    .h1_1{
-        font-size: 54px;
-    }
-
-    .about_me h1{
-        font-size: 42px;
-    }
-
-    .about_birth ul li{
-        font-size: 20px;
-    }
-
-    .about_resume a {
-        font-size: 18px;
-        padding: 8px 18px;
-    }
+@media screen and (max-width: 769px){
+  .about_me p {
+    font-size: 17px;
+  }
 }
 
-@media screen and (max-width:1230px){
-    .h1_1{
-        font-size: 40px;
-    }
+@media screen and (max-width: 700px) {
+  .about_resume a {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 
-    .about_me h1{
-        font-size:37px ;
-    }
-    
-    .about_birth ul li{
-        font-size: 15px;
-    }
-
-    .about_me p{
-        font-size: 17px;        
-    }
-
-    .about_resume a {
-        font-size: 15px;
-        padding: 6px 10px;
-    }
-
-    .about_resume{
-        margin-top:20px;
-    }
-
-}
-
-@media screen and (max-width:1100px){
-    .about_me p{
-        font-size: 15px;
-        width: 90%;
-    }
-
-    .about_birth ul li{
-        font-size: 14px;
-    }
-}
-
-/* --------------------------------------------- */
-
-/* .about{
-    width: calc( 100% - 280px );
-    height: 100vh;
-    background-color: #2d2d2d;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 30px;
-    opacity: 0.1;
-    transform: translateX(100%);
-    cursor: pointer;
-}
-
-.h1_1{
-    font-size: 45px;
-    color: #FFFFFF;
-    text-shadow: 0 0 20px #FFFFFF;
-}
-
-.about_me h1{
-    color: #fff;
-}
-
-.about_me h1 span{
-    color: #fb3b34;
-}
-
-.about_me p{
-    color: #fff;
-    margin-top: 10px;
-    text-indent: 20px;
-    width: 85%;
-}
-
-
-.about_birth{
-    display: flex;
-    color: #fff;
-    margin-top: 30px;
-    width: 80%;
-    justify-content: space-between;
-}
-
-.about_birth ul li{
+  .h1_1 {
+    font-size: 35px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 5px;
-    color: #ddd;
-    list-style-type: none;
-    transition: .2s;
+  }
+
+  .about_me h1 {
+    font-size: 30px;
+  }
 }
 
-.about_birth ul li:hover{
-    transform: scale(1.04);
-    cursor: pointer;
-    transition: .2s;
+@media screen and (max-width: 645px){
+  .about_me p {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .about_birth ul li {
+    font-size: 12px;
+  }
+
+  .about{
+    padding-left:30px ;
+  }
 }
 
-.about_birth ul li a{
-    color: #ddd;
-    text-decoration: none;
+@media screen and (max-width: 547px){
+  .about_birth{
+    flex-direction: column;
+  }
 }
 
-.about_birth ul li b{
-    margin-right: 10px;
-    color: #fff;
+@media screen and (max-width: 486px){
+  .h1_1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .about_me h1 {
+    font-size: 22px;
+  }
 }
 
-.about_resume{
-    display: flex;
-    margin-top: 30px;
+@media screen and (max-width: 413px){
+  .about_resume a {
+    font-size: 10px;
+    padding: 4px 8px;
+    padding-bottom: 6px;
+  }
+
+  .about_me p{
+    text-indent: 0;
+  } 
 }
 
-.about_resume a:first-child{
-    margin-left: 0;
-    margin-right:30px;
+@media screen and (max-width: 341px){
+  .h1_1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .about_me h1 {
+    font-size: 18px;
+  }
+
+  .about_birth ul li {
+    font-size: 10px; 
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+  }
 }
 
-.about_resume a {
-    padding:6px 14px;
-    color: #fff;
- 
-    background-color: transparent;
-    border-radius: 20px;
-    text-decoration: none;
-    border: 2px solid #fb3b34;
-    transition: .2s ease-in-out;
-    padding-bottom: 8px;
-}
 
-.about_resume a:hover{
-    padding:6px 14px;
-    color: #fff;
-    background-color: #fb3b34;
-    border-radius: 20px;
-    text-decoration: none;
-    border: 2px solid #fb3b34;
-    transition: .2s ease-in-out;
-    padding-bottom: 8px;
-} */
+@media screen and (max-width: 321px){
+  .h1_1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about_me h1 {
+    font-size: 18px;
+  }
+
+  .about_me p{
+    font-size: 12px;
+  }
+
+  .about_birth ul li {
+    font-size: 8px; 
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+  }
+}

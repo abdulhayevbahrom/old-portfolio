@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import resume from './my_resume.pdf'
 import { gsap, ScrollTrigger } from "gsap/all";
@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   useEffect(() => {
     gsap.to((".about"), {
-         opacity:1,
-         x:0
+      opacity: 1,
+      x: 0
     });
   }, []);
 
