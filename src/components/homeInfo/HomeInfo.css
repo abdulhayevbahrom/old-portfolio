@@ -177,7 +177,7 @@ section{
 
 @media screen and (max-width:1200px){
     .homeInfo{
-        width: calc( 100% - 300px);
+        width: calc( 100% - 280px);
     }
 }
 
@@ -201,10 +201,12 @@ section{
     }
 
     .sectionImg img{
-        width: 310px;
+        width: 250px;
+        height: 300px;
     }
-
+    
     .sectionImg{
+        margin-top: 50px;
         width: auto;
     }
 
@@ -218,7 +220,14 @@ section{
     }
 }
 
-@media screen and (max-width:966px){
+@media screen and (max-width:983px){
+    .sectionText h1{
+        font-size: 38px;
+    }
+}
+
+
+@media screen and (max-width:960px){
     .homeInfo{
         width: 100%;
     }
@@ -251,6 +260,12 @@ section{
         line-height: 25px;
     }
 }
+
+/* @media screen  and (max-width){
+    .sectionImg{
+        width: 250px;
+    }
+} */
 
 @media screen and (max-width:615px){
     .sectionText h1{
@@ -304,19 +319,39 @@ section{
     }
 }
 
-/* @media screen and (max-width:960px){
-    .sidebar_home{
-        width: auto;
-        height: auto;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
+@media screen and (max-width:361px){
+    .sectionImg img{
+        width: 200px;
+        height: 220px;
+    }
+}   
 
+@media screen and (max-width:376px){
+    .sectionImg img{
+        width: 220px;
+        height: 250px;
     }
 }
-.side{
-    width: 200px;
-    z-index: 50;
 
-} */
+@media screen and (max-width:321px){
+    .sectionText h1{
+        font-size: 16px;
+    }
+
+    .sectionText p{
+        font-size: 11px;
+        margin: 0;
+        line-height: 14px;
+    }
+
+    .sectionImg img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .sectionImg svg{
+        display: none;
+    }
+}
+
+

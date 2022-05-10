@@ -91,7 +91,7 @@
 
 @media screen and (max-width :1200px) {
     .sidebar{
-        width: 300px;
+        width: 280px;
     }
 
     .sidebar_link_item{
@@ -105,8 +105,7 @@
     
     .sidebarLogo img{
         width: 110px;        
-    }
-    
+    }   
 }
 
 
