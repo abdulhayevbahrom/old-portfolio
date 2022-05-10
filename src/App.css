@@ -51,5 +51,10 @@ html::-webkit-scrollbar{
 @media screen and (max-width:960px){
     .sidebar_app{
         display: none;
-    } 
+    }
+    
+    
+    body{
+      overflow: auto;
+    }
 }

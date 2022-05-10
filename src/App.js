@@ -11,23 +11,31 @@ import Clock from "react-digital-clock";
 function App() {
   return (
     <Router>
-      <div className="app">
-        <div className="sidebar_app">
-          <Sidebar  />
+      {window.innerWidth >= 961 ? (
+        <div className="app">
+          <div className="sidebar_app">
+            <Sidebar />
+          </div>
+          <h1 className="clock">
+            <Clock hour12={false} />
+          </h1>
+          <Switch>
+            <Route exact path="/" component={HomeInfo} />
+            <Route path="/about" component={About} />
+            <Route path="/skils" component={Skils} />
+            <Route path="/experience" component={Experience} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
         </div>
-
-        <h1 className="clock">
-          {" "}
-          <Clock hour12={false} />
-        </h1>
-        <Switch>
-          <Route exact path="/" component={HomeInfo} />
-          <Route path="/about" component={About} />
-          <Route path="/skils" component={Skils} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </div>
+      ) : (
+        <div className="app2">
+          <HomeInfo />
+          <About />
+          <Skils />
+          <Experience />
+          <Contact />
+        </div>
+      )}
     </Router>
   );
 }
