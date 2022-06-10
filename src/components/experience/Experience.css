@@ -38,36 +38,32 @@
   width: 294px;
   height: 180px;
   display: block;
-  margin-bottom: 10px;
-  box-shadow: -62px -65px 60px -99px #fff;
+  margin-bottom: 5px;
   transition: 0.3s;
 }
 
 .doks .exp_container_item img:hover {
   transition: 0.3s;
-  transform: scale(1.2);
+  /* transform: scale(1.1); */
   cursor: pointer;
 }
 
 .doks:nth-child(odd) {
   width: 330px;
   height: auto;
-  padding-right: 5px;
   border-bottom: 2px solid #fff;
   border-right: 6px solid #fff;
   transform: translateX(41%);
-  padding-right: 17px;
   padding-bottom: 5px;
 }
 
 .doks:nth-child(even) {
   width: 330px;
   height: auto;
-  padding-right: 5px;
   border-bottom: 2px solid #fff;
   border-left: 6px solid #fff;
   transform: translateX(139.3%);
-  padding-left: 17px;
+  padding-left: 30px;
   padding-bottom: 5px;
   position: relative;
   z-index: 2;

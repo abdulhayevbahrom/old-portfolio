@@ -1,4 +1,4 @@
-.skils{
+/* .skils{
     width: calc( 100% - 500px );
     height: 100vh;
     background-color: #2d2d2d;
@@ -64,7 +64,6 @@
 }
 
 .skils_container ul li:hover{
-    /* transform: scale(1.04); */
     transition: .2s;
     border-color: #fff;
     letter-spacing: 5px;
@@ -323,4 +322,276 @@
     }
 }
     
+ */
 
+.skils {
+  width: calc(100% - 500px);
+  height: 100vh;
+  background-color: #2d2d2d;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  
+}
+
+.skilsOpacity {
+  font-size: 100px;
+  opacity: 0.2;
+  color: #666;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.skils_caption {
+  color: orangered;
+  margin-bottom: 20px;
+  font-size: 60px;
+  text-decoration: underline;
+  /* border-bottom: 10px solid orangered; */
+}
+
+.skils_container {
+  width: 60%;
+  height: 110px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  margin: 30px 0;
+}
+
+.html {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: 0px 2px 18px 3px #fc490b;
+}
+.css {
+  box-shadow: 0px 2px 18px 3px #2196f3;
+}
+
+.sass {
+  box-shadow: 0px 2px 18px 3px #cd6699;
+}
+
+.bootstrap {
+  box-shadow: 0px 2px 18px 3px #7a09f7;
+}
+
+.github {
+  box-shadow: 0px 2px 18px 3px #000;
+}
+
+.github img {
+  width: 98px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.git {
+  box-shadow: 0px 2px 18px 3px #de4c36;
+}
+
+.js {
+  box-shadow: 0px 2px 18px 3px #ffdf00;
+}
+
+.react {
+  box-shadow: 0px 2px 18px 3px #00d8ff;
+}
+
+.firebase {
+  box-shadow: 0px 2px 18px 3px #fcca3f;
+}
+
+.gsap {
+  background-color: #262626;
+  box-shadow: 0px 2px 18px 3px #89ce03;
+}
+
+.npm {
+  box-shadow: 0px 2px 18px 3px #e80606;
+}
+
+.redux {
+  box-shadow: 0px 2px 18px 3px #8554d4;
+}
+
+img {
+  width: 70px;
+}
+
+@media screen and (max-width: 1870px) {
+  .skils_container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  .skils_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1705px) {
+  .skils {
+    width: calc(100% - 430px);
+  }
+}
+
+@media screen and (max-width: 1444px) {
+  .skils {
+    width: calc(100% - 400px);
+  }
+}
+
+@media screen and (max-width: 1385px) {
+  .skils_container {
+    width: 90%;
+  }
+
+  .html {
+    width: 90px;
+    height: 90px;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  .github img {
+    width: 86px;
+  }
+}
+
+@media screen and (max-width: 1343px) {
+  .skils {
+    width: calc(100% - 380px);
+  }
+}
+
+@media screen and (max-width: 1333px) {
+  .skils {
+    width: calc(100% - 350px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skils {
+    width: calc(100% - 280px);
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .skils_caption {
+    font-size: 50px;
+  }
+
+  .html {
+    width: 80px;
+    height: 80px;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .github img {
+    width: 76px;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .skils_caption {
+    font-size: 50px;
+  }
+
+  .html {
+    width: 70px;
+    height: 70px;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  .github img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .skils {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .skils_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap:0px;
+    grid-row-gap: 40px;
+    margin-bottom: 10px;
+    height: auto;
+    align-items: center;
+    padding-left: 80px;
+  }
+
+  .html {
+    width: 70px;
+    height: 70px;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  .github img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+    .skils_container{
+        padding-left: 40px;
+    }
+    .skils_caption {
+        font-size: 40px;
+      }
+    
+      .html {
+        width: 60px;
+        height: 60px;
+      }
+    
+      img {
+        width: 30px;
+      }
+    
+      .github img {
+        width: 60px;
+      }
+}
+
+@media screen and (max-width:360px) {
+    .skils_container{
+        padding-left: 0px;
+        grid-column-gap: 20px;
+        grid-row-gap: 0;
+    }
+}

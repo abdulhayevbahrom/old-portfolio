@@ -27,7 +27,7 @@ function Sidebar() {
         <div className="sidebarLinks">
             <NavLink exact to="/" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><IoHome/> <span>Home</span></NavLink>
             <NavLink to="/about" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><FaUserTie/> <span>About</span> </NavLink>
-            <NavLink to="/skils" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><GiSkills/> <span>Skils</span> </NavLink>
+            <NavLink to="/skils" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><GiSkills/> <span>Skills</span> </NavLink>
             <NavLink to="/experience" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><ImStatsBars/> <span>Experience</span> </NavLink>
             <NavLink to="/contact" activeStyle={{color:"#FF463F"}} className='sidebar_link_item'><TiMessages/> <span>Contact</span> </NavLink>
         </div>
