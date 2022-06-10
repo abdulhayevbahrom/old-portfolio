@@ -324,6 +324,9 @@
     
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
 .skils {
   width: calc(100% - 500px);
   height: 100vh;
@@ -347,14 +350,20 @@
   position: absolute;
   top: 0;
   left: 30px;
+ font-family: 'Roboto', sans-serif;
+
 }
+
 
 .skils_caption {
   color: orangered;
   margin-bottom: 20px;
   font-size: 60px;
-  text-decoration: underline;
-  /* border-bottom: 10px solid orangered; */
+  /* text-decoration: underline; */
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 5px solid orangered;
+  padding-bottom:0;
+  font-weight: 500;
 }
 
 .skils_container {
